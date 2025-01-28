@@ -1,67 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Offerings and Promotions</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="hero">
-        <div class="container">
-            <h1>Welcome to EduLearn Academy</h1>
-            <p>Explore top-notch courses and exclusive promotions!</p>
-            <a href="#courses" class="btn">Browse Courses</a>
-        </div>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="courses" class="courses">
-        <div class="container">
-            <h2>Our Courses</h2>
-            <div class="course-list">
-                <div class="course">
-                    <h3>Web Development</h3>
-                    <p>Master HTML, CSS, JavaScript, and more!</p>
-                    <span>Starting at $299</span>
-                </div>
-                <div class="course">
-                    <h3>Data Science</h3>
-                    <p>Learn Python, R, and Machine Learning.</p>
-                    <span>Starting at $349</span>
-                </div>
-                <div class="course">
-                    <h3>Graphic Design</h3>
-                    <p>Unlock your creativity with Adobe tools.</p>
-                    <span>Starting at $199</span>
-                </div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
 
-    <section id="promotions" class="promotions">
-        <div class="container">
-            <h2>Exclusive Promotions</h2>
-            <div class="promotion-list">
-                <div class="promotion">
-                    <h3>New Year Offer</h3>
-                    <p>Get 30% off on all courses!</p>
-                </div>
-                <div class="promotion">
-                    <h3>Group Discount</h3>
-                    <p>Enroll with friends and save 20% each.</p>
-                </div>
-                <div class="promotion">
-                    <h3>Early Bird Access</h3>
-                    <p>Sign up now and get free resources.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Header Section */
+.hero {
+    background: linear-gradient(to right, #4caf50, #76c7c0);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 EduLearn Academy. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+.hero .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #f4f4f4;
+}
+
+/* Courses Section */
+.courses {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4caf50;
+}
+
+.course-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+.course span {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Promotions Section */
+.promotions {
+    background: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.promotions h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4caf50;
+}
+
+.promotion-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promotion {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promotion h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.promotion p {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
