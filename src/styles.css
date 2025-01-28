@@ -1,21 +1,67 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Offerings and Promotions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to EduLearn Academy</h1>
+            <p>Explore top-notch courses and exclusive promotions!</p>
+            <a href="#courses" class="btn">Browse Courses</a>
+        </div>
+    </header>
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
-}
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Web Development</h3>
+                    <p>Master HTML, CSS, JavaScript, and more!</p>
+                    <span>Starting at $299</span>
+                </div>
+                <div class="course">
+                    <h3>Data Science</h3>
+                    <p>Learn Python, R, and Machine Learning.</p>
+                    <span>Starting at $349</span>
+                </div>
+                <div class="course">
+                    <h3>Graphic Design</h3>
+                    <p>Unlock your creativity with Adobe tools.</p>
+                    <span>Starting at $199</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
-}
+    <section id="promotions" class="promotions">
+        <div class="container">
+            <h2>Exclusive Promotions</h2>
+            <div class="promotion-list">
+                <div class="promotion">
+                    <h3>New Year Offer</h3>
+                    <p>Get 30% off on all courses!</p>
+                </div>
+                <div class="promotion">
+                    <h3>Group Discount</h3>
+                    <p>Enroll with friends and save 20% each.</p>
+                </div>
+                <div class="promotion">
+                    <h3>Early Bird Access</h3>
+                    <p>Sign up now and get free resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
-}
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EduLearn Academy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
